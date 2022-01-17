@@ -1,7 +1,17 @@
-const { Pool } = require("pg");
-const pool = new Pool();
-module.exports = {
-  query: (text, params, callback) => {
-    return pool.query(text, params, callback);
-  },
-};
+import pg from "pg";
+
+const pool = new pg.Pool({
+  user: 'dbuser',
+  host: 'database.server.com',
+  database: 'mydb',
+  password: 'secretpassword',
+  port: 3211,
+}) 
+
+export default function query(text, params) {
+  return pool.query(text, params);
+}
+
+export default query;
+
+

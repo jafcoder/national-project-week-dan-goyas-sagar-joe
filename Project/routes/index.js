@@ -1,5 +1,5 @@
 import express from "express";
-import { getContent } from "../models/index.js";
+import { getContent, getVideo } from "../models/index.js";
 
 var router = express.Router();
 
@@ -15,5 +15,11 @@ router.get("/api/:topic/:subject", async function (req, res) {
   const data = await getContent(subject, topic);
   res.json({ success: true, payload: data });
 });
+
+// router.get("/api/:topic", async function (req, res) {
+//   let topic = req.params.topic;
+//   const data = await getVideo(topic);
+//   res.json({ success: true, payload: data });
+// });
 
 export default router;

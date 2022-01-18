@@ -7,3 +7,9 @@ export async function getContent(subject, topic) {
   ]);
   return data.rows;
 }
+
+// export async function getVideo(topic) {
+//   //   let newSubject = subject;
+//   const data = await query(`SELECT * FROM ` + topic + ` ;`);
+//   return data.rows;
+// }

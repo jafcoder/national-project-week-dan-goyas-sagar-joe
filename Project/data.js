@@ -57,3 +57,5 @@ const videos = [
     recommended: "coach",
   },
 ];
+
+export default { videos, articles };

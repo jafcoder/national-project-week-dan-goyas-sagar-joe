@@ -10,10 +10,10 @@ async function populateArticleTable() {
     image_link = articles[i].image_link;
 
     const res = await query(
-      `INSERT INTO articles (subject, link, recommended, caption, image_link) VALUES ($1, $2, $3, $4, $5) RETURNING *`,
+      `INSERT INTO articles (subject, link, recommended, caption, image_link) VALUES ($1, $2, $3, $4, $5) RETURNING *;`,
       [subject, link, recommended, caption, image_link]
     );
-    console.log("Returned items", res);
+    console.log("populateArticleTable", res.rows);
   }
 }
 

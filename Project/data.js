@@ -154,4 +154,4 @@ const contents = [
   },
 ];
 
-export default { videos, articles };
+export default { videos, articles, contents };

@@ -8,10 +8,10 @@ async function populateVideoTable() {
     const recommended = videos[i].recommended;
 
     const res = await query(
-      `INSERT INTO videos (subject, link, recommended) VALUES ($1, $2, $3) RETURNING *`,
+      `INSERT INTO videos (subject, link, recommended) VALUES ($1, $2, $3) RETURNING *;`,
       [subject, link, recommended]
     );
-    console.log("Returned items", res);
+    console.log("populateVideoTable", res.rows);
   }
 }
 

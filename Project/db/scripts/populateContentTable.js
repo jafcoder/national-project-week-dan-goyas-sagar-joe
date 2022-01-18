@@ -1,5 +1,5 @@
 import query from "../index.js";
-import contents from "../../data.js";
+import { contents } from "../../data.js";
 
 async function populateContentTable() {
   for (let i = 0; i < contents.length; i++) {
@@ -14,3 +14,5 @@ async function populateContentTable() {
     console.log("populateContentTable", res.rows);
   }
 }
+
+populateContentTable();

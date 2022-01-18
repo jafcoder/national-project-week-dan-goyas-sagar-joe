@@ -1,6 +1,6 @@
 import query from "../index.js";
 
-sqlString = `CREATE TABLE IF NOT EXISTS videos (id SERIAL PRIMARY KEY, subject TEXT, link TEXT, recommended TEXT);`;
+let sqlString = `CREATE TABLE IF NOT EXISTS videos (id SERIAL PRIMARY KEY, subject TEXT, link TEXT, recommended TEXT);`;
 
 async function createVideoTable() {
   const videoTable = await query(sqlString);

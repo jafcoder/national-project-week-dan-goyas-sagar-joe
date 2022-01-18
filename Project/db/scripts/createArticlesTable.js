@@ -1,6 +1,6 @@
 import query from "../index.js";
 
-sqlString = `CREATE TABLE IF NOT EXISTS articles (id SERIAL PRIMARY KEY, subject TEXT, link TEXT, recommended TEXT, caption TEXT, image_link TEXT);`;
+let sqlString = `CREATE TABLE IF NOT EXISTS articles (id SERIAL PRIMARY KEY, subject TEXT, link TEXT, recommended TEXT, caption TEXT, image_link TEXT);`;
 async function createArticlesTable() {
   console.log("This is the articleTable");
   const articleTable = await query(sqlString);

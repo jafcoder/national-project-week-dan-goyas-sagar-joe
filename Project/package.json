@@ -7,7 +7,7 @@
     "start": "node ./bin/www.js",
     "dev": "nodemon -r dotenv/config ./bin/www.js",
     "dbcreatevideotable": "nodemon -r dotenv/config db/scripts/createVideoTable.js",
-    "dbcreatearticletable": "nodemon -r dotenv/config db/scripts/createArticleTable.js",
+    "dbcreatearticletable": "nodemon -r dotenv/config db/scripts/createArticlesTable.js",
     "dbcreatecontenttable": "nodemon -r dotenv/config db/scripts/createContentTable.js",
     "dbpopulatevideotable": "nodemon -r dotenv/config db/scripts/populateVideoTable.js",
     "dbpopulatearticletable": "nodemon -r dotenv/config db/scripts/populateArticleTable.js",

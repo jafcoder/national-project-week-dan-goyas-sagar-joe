@@ -1,4 +1,4 @@
-const articles = [
+export const articles = [
   {
     subject: "useState",
     link: "https://javascript.works-hub.com/learn/a-complete-beginners-guide-to-react-usestate-hook-f85a0",
@@ -62,7 +62,7 @@ const articles = [
   },
 ];
 
-const videos = [
+export const videos = [
   {
     subject: "useState",
     link: "https://www.youtube.com/watch?v=O6P86uwfdR0",
@@ -105,7 +105,7 @@ const videos = [
   },
 ];
 
-const contents = [
+export const contents = [
   {
     subject: "useEffect",
     code_example: `import { useState, useEffect } from "react";
@@ -154,4 +154,4 @@ const contents = [
   },
 ];
 
-export default { videos, articles, contents };
+// export default { videos, articles, contents };

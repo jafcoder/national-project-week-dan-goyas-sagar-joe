@@ -1,5 +1,5 @@
 import query from "../index.js";
-import videos from "../../data.js";
+import { videos } from "../../data.js";
 
 async function populateVideoTable() {
   for (let i = 0; i < videos.length; i++) {
@@ -11,7 +11,7 @@ async function populateVideoTable() {
       `INSERT INTO videos (subject, link, recommended) VALUES ($1, $2, $3) RETURNING *;`,
       [subject, link, recommended]
     );
-    console.log("populateVideoTable", res.rows);
+    console.log("populateVideoTable", res);
   }
 }
 

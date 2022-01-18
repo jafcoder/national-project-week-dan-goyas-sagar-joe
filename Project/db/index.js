@@ -1,5 +1,5 @@
 import pg from "pg";
-import database from "../config"
+import database from "../config.js";
 
 const pool = new pg.Pool({
   user: database.user,
@@ -8,12 +8,10 @@ const pool = new pg.Pool({
   password: database.password,
   port: database.port,
   ssl: { rejectUnauthorized: false },
-}) 
+});
 
-export default function query(text, params) {
+export function query(text, params) {
   return pool.query(text, params);
 }
 
 export default query;
-
-

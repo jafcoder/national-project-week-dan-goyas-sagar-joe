@@ -4,7 +4,7 @@ export const database = {
   database: process.env.PGDATABASE,
   password: process.env.PASSWORD,
   port: process.env.PGPORT,
-  testing: process.env.TESTING,
+  // connectionString: process.env.DATABASE_URL,
 };
 
 export default database;

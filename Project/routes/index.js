@@ -16,4 +16,10 @@ router.get("/api/:topic/:subject", async function (req, res) {
   res.json({ success: true, payload: data });
 });
 
+// router.get("/api/:topic", async function (req, res) {
+//   let topic = req.params.topic;
+//   const data = await getVideo(topic);
+//   res.json({ success: true, payload: data });
+// });
+
 export default router;

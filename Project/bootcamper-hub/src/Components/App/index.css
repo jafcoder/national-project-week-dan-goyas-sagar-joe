@@ -1,27 +1,23 @@
+body {
+  background-color: #f7dfc7;
+}
+
 .App {
   text-align: center;
+  background-color: #f7dfc7;
+  margin: 10px;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
+  filter: brightness(80%);
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -35,4 +31,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.react-link {
+  font-size: 2.5em;
+}
+
+.react-docs-text:hover {
+  font-style: italic;
+}
+
+@keyframes bootcamper-image {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bootcamper-image {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.ReactDocInfo {
+  font-style: italic;
+  opacity: 0.5;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85em;
 }

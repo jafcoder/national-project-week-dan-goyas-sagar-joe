@@ -8,9 +8,12 @@ import { useEffect } from "react";
 function App() {
   useEffect(() => {
     async function getData() {
-      const response = await fetch("/api/videos/");
+      const response = await fetch(
+        `${process.env.REACT_APP_BACKEND_URL}/api/videos/useState`
+      );
+
       const data = await response.json();
-      console.log(data);
+      console.log("data: ", data.payload);
     }
     getData();
   }, []);

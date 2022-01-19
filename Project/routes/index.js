@@ -1,5 +1,5 @@
 import express from "express";
-import { getContent, getVideo } from "../models/index.js";
+import { getContent } from "../models/index.js";
 
 var router = express.Router();
 

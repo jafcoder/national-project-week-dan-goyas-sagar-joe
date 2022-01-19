@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+:root {
+  --font-colour: #30a4db;
+  font-size: 16px;
+}
+
+.page-top {
+  display: flex;
+  justify-content: center;
+}
+
+.page-title {
+  font-family: "Oswald", sans-serif;
+  color: var(--font-colour);
+  font-size: 5em;
+  text-decoration: underline;
+}
+
+.soc-image {
+  height: 200px;
+}
+
+.search-button {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Google_Magnifying_Glass.svg/1200px-Google_Magnifying_Glass.svg.png);
+  background-color: #1725a1;
+  border-radius: 50%;
+  margin-left: 0.3%;
+}
+
+.heading-text {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.tagline {
+  color: var(--font-colour);
+  filter: brightness(85%);
+  justify-self: center;
+  align-self: center;
+  margin-top: -3.5em;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+
+.intro {
+  font-style: italic;
+  opacity: 0.5;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85em;
+}
+
+.button-image {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  filter: invert(1);
+}
+
+.heading-input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  background-color: #f7dfc7;
+  border-color: #1725a1;
+  border-width: medium;
+  width: 8vw;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.heading-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #30a4db;
+}
+
+::placeholder {
+  opacity: 1;
+  color: #1725a1;
+}

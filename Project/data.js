@@ -65,42 +65,42 @@ export const articles = [
 export const videos = [
   {
     subject: "useState",
-    link: "https://www.youtube.com/watch?v=O6P86uwfdR0",
+    link: "https://www.youtube.com/embed/O6P86uwfdR0",
     recommended: "bootcamper",
   },
   {
     subject: "useState",
-    link: "https://www.youtube.com/watch?v=mxK8b99iJTg",
+    link: "https://www.youtube.com/embed/mxK8b99iJTg",
     recommended: "coach",
   },
   {
     subject: "useEffect",
-    link: "https://www.youtube.com/watch?v=0ZJgIjIuY7U",
+    link: "https://www.youtube.com/embed/0ZJgIjIuY7U",
     recommended: "bootcamper",
   },
   {
     subject: "useEffect",
-    link: "https://www.youtube.com/watch?v=06Y6aJzTmXY",
+    link: "https://www.youtube.com/embed/06Y6aJzTmXY",
     recommended: "coach",
   },
   {
     subject: "useReducer",
-    link: "https://www.youtube.com/watch?v=cVYp4u1m6iA",
+    link: "https://www.youtube.com/embed/cVYp4u1m6iA",
     recommended: "bootcamper",
   },
   {
     subject: "useReducer",
-    link: "https://www.youtube.com/watch?v=kK_Wqx3RnHk",
+    link: "https://www.youtube.com/embed/kK_Wqx3RnHk",
     recommended: "coach",
   },
   {
     subject: "props",
-    link: "https://www.youtube.com/watch?v=IYvD9oBCuJI",
+    link: "https://www.youtube.com/embed/IYvD9oBCuJI",
     recommended: "bootcamper",
   },
   {
     subject: "props",
-    link: "https://www.youtube.com/watch?v=PHaECbrKgs0",
+    link: "https://www.youtube.com/embed/PHaECbrKgs0",
     recommended: "coach",
   },
 ];

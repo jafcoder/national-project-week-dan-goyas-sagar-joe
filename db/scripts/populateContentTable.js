@@ -6,10 +6,11 @@ async function populateContentTable() {
     const subject = contents[i].subject;
     const code_example = contents[i].code_example;
     const description = contents[i].description;
+    const title = contents[i].title;
 
     const res = await query(
-      `INSERT INTO content (subject, code_example, description) VALUES ($1, $2, $3) RETURNING *;`,
-      [subject, code_example, description]
+      `INSERT INTO content (subject, code_example, description, title) VALUES ($1, $2, $3, $4) RETURNING *;`,
+      [subject, code_example, description, title]
     );
     console.log("populateContentTable", res.rows);
   }

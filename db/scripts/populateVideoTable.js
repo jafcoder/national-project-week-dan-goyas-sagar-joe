@@ -11,7 +11,7 @@ async function populateVideoTable() {
       `INSERT INTO videos (subject, link, recommended) VALUES ($1, $2, $3) RETURNING *;`,
       [subject, link, recommended]
     );
-    console.log("populateVideoTable", res);
+    console.log("populateVideoTable", res.rows);
   }
 }
 

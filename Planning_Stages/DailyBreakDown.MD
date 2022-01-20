@@ -32,6 +32,7 @@
 ## End of Thursday
 
 - Realistic stretch goals
+- Start presentation planning by 3pm
 
 ## Friday morning
 

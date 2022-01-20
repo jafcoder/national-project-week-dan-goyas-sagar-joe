@@ -1,11 +1,11 @@
 import express from "express";
-import { getContent } from "../models/index.js";
+import { getContent, getAll } from "../models/index.js";
 
 var router = express.Router();
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Express" });
+  res.render("index", { title: "Welcome to Bootcamper Hub" });
 });
 
 router.get("/api/:topic/:subject", async function (req, res) {
@@ -13,6 +13,11 @@ router.get("/api/:topic/:subject", async function (req, res) {
   let topic = req.params.topic;
   console.log(subject);
   const data = await getContent(subject, topic);
+  res.json({ success: true, payload: data });
+});
+
+router.get("/api", async function (req, res) {
+  const data = await getAll();
   res.json({ success: true, payload: data });
 });
 
